@@ -52,3 +52,12 @@ CTestTestfile.cmake
 
 # JetBrains
 .idea/
+
+#Hemtt
+*.pbo
+.hemttout
+hemtt
+hemtt.exe
+*.biprivatekey
+*.hemttprivatekey
+

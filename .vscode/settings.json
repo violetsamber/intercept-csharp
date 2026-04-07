@@ -1,0 +1,85 @@
+{
+    "sqf.enableCBA": true,
+    "sqf.enableACE3": true,
+    "sqflint.ignoredVariables": [
+        "_input0",
+        "_thisArgs",
+        "_thisId",
+        "_thisType"
+    ],
+    "psi-header.lang-config": [
+        {
+            "license": "Custom",
+            "language": "sqf",
+            "rootDirFileName": "description.ext",
+            "begin": "/*",
+            "prefix": "    ",
+            "end": "*/",
+            "forceToTop": true
+        },
+        {
+            "license": "Custom",
+            "language": "ext",
+            "rootDirFileName": "description.ext",
+            "begin": "/*",
+            "prefix": "    ",
+            "end": "*/",
+            "forceToTop": true
+        }
+    ],
+    "psi-header.changes-tracking": {
+        "isActive": true,
+        "include": ["sqf", "ext"],
+        "modDate": "Last Update:",
+        "modDateFormat": "YYYY-MM-DD",
+        "autoHeader": "manualSave"
+    },
+    "psi-header.license-text": [
+        "GNU GENERAL PUBLIC LICENSE - https://www.gnu.org/licenses/gpl-3.0.en.html"
+    ],
+    "psi-header.templates": [
+        {
+            "language": "sqf",
+            "template": [
+                "File: <<filename>>",
+                "Authors: ",
+                "Date: <<filecreated('YYYY-MM-DD')>>",
+                "Last Update:",
+                "License: GNU GENERAL PUBLIC LICENSE - https://www.gnu.org/licenses/gpl-3.0.en.html",
+                "",
+                "Description:",
+                "    No description added yet.",
+                "",
+                "Parameter(s):",
+                "    _localVariable - Description [DATATYPE, defaults to DEFAULTVALUE]",
+                "",
+                "Returns:",
+                "    Function reached the end [BOOL]"
+            ]
+        },
+        {
+            "language": "ext",
+            "template": [
+                "File: <<filename>>",
+                "Authors: ",
+                "Date: <<filecreated('YYYY-MM-DD')>>",
+                "Last Update:",
+                "License: GNU GENERAL PUBLIC LICENSE - https://www.gnu.org/licenses/gpl-3.0.en.html",
+                "",
+                "Description:",
+                "    No description added yet."
+            ]
+        }
+    ],
+    "todo-tree.general.statusBar": "tags",
+    "todo-tree.tree.showCountsInTree": true,
+    "todo-tree.tree.flat": true,
+    "filewatcher.commands": [
+        {
+            "match": "\\.sqf*",
+			"isAsync": true,
+            "vscodeTask": ["sqf-analyzer.restart"],
+			"event": "onFileChange"
+        }
+    ]
+}

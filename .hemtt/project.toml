@@ -1,0 +1,14 @@
+name = "Intercept C#"
+author = "Violets"
+prefix = "csharp"
+mainprefix = "z"
+
+# Configures what files (other than your mod) will be included in the final build.
+[files]
+include = [
+    "LICENSE"
+]
+
+# Configures whether git hash will be included in version numbers.
+[version]
+git_hash = 0
